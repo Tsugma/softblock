@@ -6357,6 +6357,11 @@ body > * {
         -ms-flex-preferred-size: 50% !important;
             flex-basis: 50% !important;
       }
+      .at-column:before {
+        content: "";
+        display: block;
+        padding-top: 200%;
+      }
     }
     @media (max-width: 600px) {
       .at-column {
@@ -6366,6 +6371,52 @@ body > * {
         -ms-flex-preferred-size: 100% !important;
             flex-basis: 100% !important;
       }
+      .at-column:before {
+        content: "";
+        display: block;
+        padding-top: 200%;
+      }
+      h1, .h1 {
+        font-size: 2rem; }
+
+      h2, .h2 {
+        font-size: 1.5rem; }
+
+      h3, .h3 {
+        font-size: 1rem; }
+
+      .lead {
+        font-size: 1rem;
+        font-weight: 300; }
+
+      .lead-2 {
+        font-size: 1rem;
+        font-weight: 300; }
+
+        .lead-3 {
+          font-size: 1rem;
+          font-weight: 300; }
+
+
+      .display-3 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2; }
+
+      .display-4 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.2; }
+
+        .at-user__name {
+          font-size: 1.5rem !important;
+        }
+        .at-user__title {
+          font-size: 1rem !important;
+        }
+        .footer-mobile {
+          text-align: center !important;
+        }
     }
     .at-user {
       position: absolute;
@@ -6433,30 +6484,4 @@ body > * {
       max-width:70%;
       border-bottom: 0.05em solid rgba(0, 0, 0, 0.5);
       margin: 1.5em auto 0;
-    }
-
-    .column{float:left;}
-
-    @media screen and (max-width:480px){
-        .column{float:none;position:relative;clear:both;}
-    }
-
-    .size-1of4{width:25%;}
-    .size-1of3{width:33.333%;}
-    .size-1of2{width:50%;}
-    #board[data-columns]::before{content:'4 .column.size-1of3';}
-
-    /*--Configure salvattore with media queries--*/
-
-    @media screen and (max-width:450px){
-        #board[data-columns]::before{content:'1 .column';}
-    }
-    @media screen and (min-width:451px) and (max-width:700px){
-        #board[data-columns]::before{content:'2 .column.size-1of2';}
-    }
-    @media screen and (min-width:701px) and (max-width:850px){
-        #board[data-columns]::before{content:'3 .column.size-1of3';}
-    }
-    @media screen and (min-width:851px){
-        #board[data-columns]::before{content:'4 .column.size-1of4';}
     }
